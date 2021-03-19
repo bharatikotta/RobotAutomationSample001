@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.2 (Python 3.9.0 on win32)" generated="20210318 23:21:56.971" rpa="false">
-<suite id="s1" name="Keyword tests" source="C:\Users\bharati.r.kotta\PycharmProjects\SOAPAutomation\TestCases\Keyword_tests.robot">
+<robot generator="Robot 3.2.2 (Python 3.9.0 on win32)" generated="20210319 18:51:03.138" rpa="false">
+<suite id="s1" name="Keyword Tests" source="C:\Users\bharati.r.kotta\PycharmProjects\SOAPAutomation\TestCases\keyword_tests.robot">
 <test id="s1-t1" name="Test Call Soap Method Add">
 <kw name="Create SOAP Client" library="SoapLibrary">
 <doc>Loads a WSDL from the given URL and creates a Zeep client.
@@ -8,9 +8,9 @@ List all Available operations/methods with INFO log level.</doc>
 <arguments>
 <arg>${wsdl_calculator}</arg>
 </arguments>
-<msg timestamp="20210318 23:22:07.114" level="INFO">Connected to: http://www.dneonline.com/calculator.asmx?wsdl</msg>
-<msg timestamp="20210318 23:22:07.114" level="INFO">Available operations: dict_keys(['Add', 'Subtract', 'Multiply', 'Divide'])</msg>
-<status status="PASS" starttime="20210318 23:22:03.967" endtime="20210318 23:22:07.114"></status>
+<msg timestamp="20210319 18:51:12.061" level="INFO">Connected to: http://www.dneonline.com/calculator.asmx?wsdl</msg>
+<msg timestamp="20210319 18:51:12.061" level="INFO">Available operations: dict_keys(['Add', 'Subtract', 'Multiply', 'Divide'])</msg>
+<status status="PASS" starttime="20210319 18:51:10.611" endtime="20210319 18:51:12.061"></status>
 </kw>
 <kw name="Call SOAP Method" library="SoapLibrary">
 <doc>If the webservice have simple SOAP operation/method with few arguments, you can call the method with the given
@@ -23,8 +23,8 @@ List all Available operations/methods with INFO log level.</doc>
 <assign>
 <var>${response}</var>
 </assign>
-<msg timestamp="20210318 23:22:07.840" level="INFO">${response} = 80</msg>
-<status status="PASS" starttime="20210318 23:22:07.124" endtime="20210318 23:22:07.840"></status>
+<msg timestamp="20210319 18:51:12.669" level="INFO">${response} = 80</msg>
+<status status="PASS" starttime="20210319 18:51:12.061" endtime="20210319 18:51:12.669"></status>
 </kw>
 <kw name="Should Be Equal As Integers" library="BuiltIn">
 <doc>Fails if objects are unequal after converting them to integers.</doc>
@@ -32,20 +32,20 @@ List all Available operations/methods with INFO log level.</doc>
 <arg>80</arg>
 <arg>${response}</arg>
 </arguments>
-<msg timestamp="20210318 23:22:07.840" level="INFO">Argument types are:
+<msg timestamp="20210319 18:51:12.669" level="INFO">Argument types are:
 &lt;type 'unicode'&gt;
 &lt;class 'int'&gt;</msg>
-<status status="PASS" starttime="20210318 23:22:07.840" endtime="20210318 23:22:07.849"></status>
+<status status="PASS" starttime="20210319 18:51:12.669" endtime="20210319 18:51:12.677"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${response}</arg>
 </arguments>
-<msg timestamp="20210318 23:22:07.849" level="INFO">80</msg>
-<status status="PASS" starttime="20210318 23:22:07.849" endtime="20210318 23:22:07.849"></status>
+<msg timestamp="20210319 18:51:12.677" level="INFO">80</msg>
+<status status="PASS" starttime="20210319 18:51:12.677" endtime="20210319 18:51:12.677"></status>
 </kw>
-<status status="PASS" starttime="20210318 23:22:03.967" endtime="20210318 23:22:07.855" critical="yes"></status>
+<status status="PASS" starttime="20210319 18:51:10.611" endtime="20210319 18:51:12.677" critical="yes"></status>
 </test>
 <test id="s1-t2" name="Test Call Soap Method Subtract">
 <kw name="Create SOAP Client" library="SoapLibrary">
@@ -54,9 +54,9 @@ List all Available operations/methods with INFO log level.</doc>
 <arguments>
 <arg>${wsdl_calculator}</arg>
 </arguments>
-<msg timestamp="20210318 23:22:08.576" level="INFO">Connected to: http://www.dneonline.com/calculator.asmx?wsdl</msg>
-<msg timestamp="20210318 23:22:08.576" level="INFO">Available operations: dict_keys(['Add', 'Subtract', 'Multiply', 'Divide'])</msg>
-<status status="PASS" starttime="20210318 23:22:07.855" endtime="20210318 23:22:08.576"></status>
+<msg timestamp="20210319 18:51:13.287" level="INFO">Connected to: http://www.dneonline.com/calculator.asmx?wsdl</msg>
+<msg timestamp="20210319 18:51:13.287" level="INFO">Available operations: dict_keys(['Add', 'Subtract', 'Multiply', 'Divide'])</msg>
+<status status="PASS" starttime="20210319 18:51:12.685" endtime="20210319 18:51:13.287"></status>
 </kw>
 <kw name="Call SOAP Method" library="SoapLibrary">
 <doc>If the webservice have simple SOAP operation/method with few arguments, you can call the method with the given
@@ -69,8 +69,8 @@ List all Available operations/methods with INFO log level.</doc>
 <assign>
 <var>${response}</var>
 </assign>
-<msg timestamp="20210318 23:22:08.968" level="INFO">${response} = 20</msg>
-<status status="PASS" starttime="20210318 23:22:08.576" endtime="20210318 23:22:08.968"></status>
+<msg timestamp="20210319 18:51:13.900" level="INFO">${response} = 20</msg>
+<status status="PASS" starttime="20210319 18:51:13.287" endtime="20210319 18:51:13.900"></status>
 </kw>
 <kw name="Should Be Equal As Integers" library="BuiltIn">
 <doc>Fails if objects are unequal after converting them to integers.</doc>
@@ -78,20 +78,20 @@ List all Available operations/methods with INFO log level.</doc>
 <arg>20</arg>
 <arg>${response}</arg>
 </arguments>
-<msg timestamp="20210318 23:22:08.968" level="INFO">Argument types are:
+<msg timestamp="20210319 18:51:13.908" level="INFO">Argument types are:
 &lt;type 'unicode'&gt;
 &lt;class 'int'&gt;</msg>
-<status status="PASS" starttime="20210318 23:22:08.968" endtime="20210318 23:22:08.968"></status>
+<status status="PASS" starttime="20210319 18:51:13.908" endtime="20210319 18:51:13.908"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${response}</arg>
 </arguments>
-<msg timestamp="20210318 23:22:08.968" level="INFO">20</msg>
-<status status="PASS" starttime="20210318 23:22:08.968" endtime="20210318 23:22:08.968"></status>
+<msg timestamp="20210319 18:51:13.916" level="INFO">20</msg>
+<status status="PASS" starttime="20210319 18:51:13.908" endtime="20210319 18:51:13.916"></status>
 </kw>
-<status status="PASS" starttime="20210318 23:22:07.855" endtime="20210318 23:22:08.968" critical="yes"></status>
+<status status="PASS" starttime="20210319 18:51:12.677" endtime="20210319 18:51:13.916" critical="yes"></status>
 </test>
 <test id="s1-t3" name="Test Call Soap Method Multiply">
 <kw name="Create SOAP Client" library="SoapLibrary">
@@ -100,9 +100,9 @@ List all Available operations/methods with INFO log level.</doc>
 <arguments>
 <arg>${wsdl_calculator}</arg>
 </arguments>
-<msg timestamp="20210318 23:22:09.696" level="INFO">Connected to: http://www.dneonline.com/calculator.asmx?wsdl</msg>
-<msg timestamp="20210318 23:22:09.696" level="INFO">Available operations: dict_keys(['Add', 'Subtract', 'Multiply', 'Divide'])</msg>
-<status status="PASS" starttime="20210318 23:22:08.977" endtime="20210318 23:22:09.696"></status>
+<msg timestamp="20210319 18:51:14.701" level="INFO">Connected to: http://www.dneonline.com/calculator.asmx?wsdl</msg>
+<msg timestamp="20210319 18:51:14.701" level="INFO">Available operations: dict_keys(['Add', 'Subtract', 'Multiply', 'Divide'])</msg>
+<status status="PASS" starttime="20210319 18:51:13.940" endtime="20210319 18:51:14.701"></status>
 </kw>
 <kw name="Call SOAP Method" library="SoapLibrary">
 <doc>If the webservice have simple SOAP operation/method with few arguments, you can call the method with the given
@@ -115,8 +115,8 @@ List all Available operations/methods with INFO log level.</doc>
 <assign>
 <var>${response}</var>
 </assign>
-<msg timestamp="20210318 23:22:10.498" level="INFO">${response} = 1500</msg>
-<status status="PASS" starttime="20210318 23:22:09.701" endtime="20210318 23:22:10.498"></status>
+<msg timestamp="20210319 18:51:15.350" level="INFO">${response} = 1500</msg>
+<status status="PASS" starttime="20210319 18:51:14.701" endtime="20210319 18:51:15.350"></status>
 </kw>
 <kw name="Should Be Equal As Integers" library="BuiltIn">
 <doc>Fails if objects are unequal after converting them to integers.</doc>
@@ -124,20 +124,20 @@ List all Available operations/methods with INFO log level.</doc>
 <arg>1500</arg>
 <arg>${response}</arg>
 </arguments>
-<msg timestamp="20210318 23:22:10.507" level="INFO">Argument types are:
+<msg timestamp="20210319 18:51:15.350" level="INFO">Argument types are:
 &lt;type 'unicode'&gt;
 &lt;class 'int'&gt;</msg>
-<status status="PASS" starttime="20210318 23:22:10.498" endtime="20210318 23:22:10.507"></status>
+<status status="PASS" starttime="20210319 18:51:15.350" endtime="20210319 18:51:15.350"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${response}</arg>
 </arguments>
-<msg timestamp="20210318 23:22:10.510" level="INFO">1500</msg>
-<status status="PASS" starttime="20210318 23:22:10.510" endtime="20210318 23:22:10.510"></status>
+<msg timestamp="20210319 18:51:15.350" level="INFO">1500</msg>
+<status status="PASS" starttime="20210319 18:51:15.350" endtime="20210319 18:51:15.350"></status>
 </kw>
-<status status="PASS" starttime="20210318 23:22:08.977" endtime="20210318 23:22:10.513" critical="yes"></status>
+<status status="PASS" starttime="20210319 18:51:13.940" endtime="20210319 18:51:15.350" critical="yes"></status>
 </test>
 <test id="s1-t4" name="Test Call Soap Method Divide">
 <kw name="Create SOAP Client" library="SoapLibrary">
@@ -146,9 +146,9 @@ List all Available operations/methods with INFO log level.</doc>
 <arguments>
 <arg>${wsdl_calculator}</arg>
 </arguments>
-<msg timestamp="20210318 23:22:11.162" level="INFO">Connected to: http://www.dneonline.com/calculator.asmx?wsdl</msg>
-<msg timestamp="20210318 23:22:11.162" level="INFO">Available operations: dict_keys(['Add', 'Subtract', 'Multiply', 'Divide'])</msg>
-<status status="PASS" starttime="20210318 23:22:10.513" endtime="20210318 23:22:11.162"></status>
+<msg timestamp="20210319 18:51:16.121" level="INFO">Connected to: http://www.dneonline.com/calculator.asmx?wsdl</msg>
+<msg timestamp="20210319 18:51:16.121" level="INFO">Available operations: dict_keys(['Add', 'Subtract', 'Multiply', 'Divide'])</msg>
+<status status="PASS" starttime="20210319 18:51:15.365" endtime="20210319 18:51:16.121"></status>
 </kw>
 <kw name="Call SOAP Method" library="SoapLibrary">
 <doc>If the webservice have simple SOAP operation/method with few arguments, you can call the method with the given
@@ -161,8 +161,8 @@ List all Available operations/methods with INFO log level.</doc>
 <assign>
 <var>${response}</var>
 </assign>
-<msg timestamp="20210318 23:22:11.639" level="INFO">${response} = 2</msg>
-<status status="PASS" starttime="20210318 23:22:11.162" endtime="20210318 23:22:11.639"></status>
+<msg timestamp="20210319 18:51:16.691" level="INFO">${response} = 2</msg>
+<status status="PASS" starttime="20210319 18:51:16.121" endtime="20210319 18:51:16.691"></status>
 </kw>
 <kw name="Should Be Equal As Integers" library="BuiltIn">
 <doc>Fails if objects are unequal after converting them to integers.</doc>
@@ -170,22 +170,22 @@ List all Available operations/methods with INFO log level.</doc>
 <arg>2</arg>
 <arg>${response}</arg>
 </arguments>
-<msg timestamp="20210318 23:22:11.679" level="INFO">Argument types are:
+<msg timestamp="20210319 18:51:16.707" level="INFO">Argument types are:
 &lt;type 'unicode'&gt;
 &lt;class 'int'&gt;</msg>
-<status status="PASS" starttime="20210318 23:22:11.679" endtime="20210318 23:22:11.679"></status>
+<status status="PASS" starttime="20210319 18:51:16.691" endtime="20210319 18:51:16.707"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${response}</arg>
 </arguments>
-<msg timestamp="20210318 23:22:11.703" level="INFO">2</msg>
-<status status="PASS" starttime="20210318 23:22:11.703" endtime="20210318 23:22:11.703"></status>
+<msg timestamp="20210319 18:51:16.707" level="INFO">2</msg>
+<status status="PASS" starttime="20210319 18:51:16.707" endtime="20210319 18:51:16.707"></status>
 </kw>
-<status status="PASS" starttime="20210318 23:22:10.513" endtime="20210318 23:22:11.751" critical="yes"></status>
+<status status="PASS" starttime="20210319 18:51:15.350" endtime="20210319 18:51:16.707" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20210318 23:21:56.991" endtime="20210318 23:22:11.774"></status>
+<status status="PASS" starttime="20210319 18:51:03.154" endtime="20210319 18:51:16.707"></status>
 </suite>
 <statistics>
 <total>
@@ -195,7 +195,7 @@ List all Available operations/methods with INFO log level.</doc>
 <tag>
 </tag>
 <suite>
-<stat pass="4" fail="0" id="s1" name="Keyword tests">Keyword tests</stat>
+<stat pass="4" fail="0" id="s1" name="Keyword Tests">Keyword Tests</stat>
 </suite>
 </statistics>
 <errors>
