@@ -1,4 +1,4 @@
 pip install robotframework
 pip install robotframework-requests
 pip install robotframework-jsonlibrary
-pip insatll robotframework-seleniumlibrary
+pip install robotframework-seleniumlibrary
